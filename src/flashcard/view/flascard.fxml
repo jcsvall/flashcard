@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="1055.0" style="-fx-background-color: #3f51b5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flashcard.controller.FlashCardController">
+   <children>
+      <Label prefHeight="28.0" prefWidth="1057.0" style="-fx-background-color: #303f9f;" />
+      <AnchorPane layoutY="81.0" prefHeight="491.0" prefWidth="1055.0" style="-fx-background-color: white;">
+         <children>
+            <JFXListView fx:id="listView" focusTraversable="false" layoutX="40.0" layoutY="37.0" orientation="HORIZONTAL" prefHeight="333.0" prefWidth="975.0" />
+            <AnchorPane fx:id="paneMenu" opacity="0.8" prefHeight="32.0" prefWidth="1055.0" style="-fx-background-color: #3f51b5; -fx-border-color: #303f9f;">
+               <children>
+                  <ImageView fx:id="agregar" fitHeight="20.0" fitWidth="20.0" layoutX="194.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../assets/icons8-add-30.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="categoriaBtn" fitHeight="18.0" fitWidth="18.0" layoutX="96.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-listing-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="7.0" layoutY="6.0" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="49.0" layoutY="6.0" prefHeight="20.0" prefWidth="2.0" style="-fx-background-color: #ffffff;" />
+                  <ImageView fx:id="agregar2" fitHeight="20.0" fitWidth="20.0" layoutX="58.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-add-30.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="aboutImgBtn" fitHeight="18.0" fitWidth="18.0" layoutX="137.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-about-50.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXComboBox fx:id="comboCate" layoutX="146.0" layoutY="382.0" prefHeight="25.0" prefWidth="214.0" promptText="Categorias" visibleRowCount="5" />
+            <Label layoutX="63.0" layoutY="385.0" text="Categorias">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="practicarBtn" layoutX="888.0" layoutY="377.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #303f9f;" text="Practicar" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="seleccionadosBtn" layoutX="888.0" layoutY="412.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #303f9f;" text="Seleccionados(0)" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="aplicarBtn" layoutX="382.0" layoutY="383.0" style="-fx-background-color: #303f9f;" text="Filtrar" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="editarBtn" layoutX="888.0" layoutY="447.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #303f9f;" text="Editar" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+      <ImageView fx:id="menu" fitHeight="35.0" fitWidth="24.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-menu-26.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="buscar" focusColor="#7c4dff" layoutX="280.0" layoutY="39.0" prefHeight="24.0" prefWidth="477.0" promptText="Buscar" style="-fx-background-color: white;" unFocusColor="#7c4dff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="buscarLupa" fitHeight="24.0" fitWidth="24.0" layoutX="762.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-search-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="donateBtn" fitHeight="51.0" fitWidth="70.0" layoutX="968.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-donate-64.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

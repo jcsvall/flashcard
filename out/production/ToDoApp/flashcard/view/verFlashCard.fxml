@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #3f51b5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flashcard.controller.VerFlashCardController">
+   <children>
+      <JFXBadge layoutX="96.0" layoutY="111.0" />
+      <Label fx:id="textoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="600.0" text="testing" textFill="#fcf8f8" wrapText="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <ImageView fx:id="siguienteBtn" fitHeight="44.0" fitWidth="40.0" layoutX="650.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-next-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="atrasBtn" fitHeight="44.0" fitWidth="40.0" layoutX="14.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-back-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="girarBtn" fitHeight="28.0" fitWidth="27.0" layoutX="657.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-rotate-48.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="conteoHeaderLabel" layoutX="336.0" layoutY="19.0" text="1/1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="respuestaEliminarPanel" layoutX="366.0" layoutY="9.0" prefHeight="40.0" prefWidth="318.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="11.0" prefHeight="17.0" prefWidth="111.0" text="Se eliminará ?" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="eliminarBtnSi" layoutX="107.0" layoutY="5.0" prefHeight="20.0" prefWidth="40.0" style="-fx-background-color: red;" text="Si" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="eliminarBtnNo" layoutX="153.0" layoutY="6.0" prefHeight="20.0" prefWidth="40.0" style="-fx-background-color: black;" text="No" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXCheckBox fx:id="selected" layoutX="662.0" layoutY="179.0" unCheckedColor="WHITE" visible="false" />
+   </children>
+</AnchorPane>

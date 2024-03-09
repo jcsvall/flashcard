@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="600.0" style="-fx-background-color: #3f51b5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flashcard.controller.AddFlashCardController2">
+   <children>
+      <JFXBadge layoutX="96.0" layoutY="111.0" />
+      <Label fx:id="textoLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="471.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" text="testing" textFill="#fcf8f8" wrapText="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <JFXTextArea fx:id="desccriptionTextArea" focusColor="#7c4dff" layoutX="268.0" layoutY="476.0" prefHeight="98.0" prefWidth="282.0" promptText="Agrega el texto" style="-fx-background-color: #ffffff;" unFocusColor="#7c4dff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextArea>
+      <ImageView fx:id="girarBtn" fitHeight="28.0" fitWidth="27.0" layoutX="208.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-rotate-48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="487.0" prefHeight="17.0" prefWidth="93.0" text="Color de fondo :" textFill="WHITE" />
+      <Label layoutX="13.0" layoutY="518.0" prefHeight="17.0" prefWidth="93.0" text="Color de  letra :" textFill="WHITE" />
+      <JFXColorPicker fx:id="colorFondo" layoutX="106.0" layoutY="483.0" prefHeight="25.0" prefWidth="70.0" />
+      <JFXColorPicker fx:id="colorLetra" layoutX="106.0" layoutY="514.0" prefHeight="25.0" prefWidth="70.0" />
+      <JFXComboBox fx:id="comboCate" focusColor="#7c4dff" layoutX="70.0" layoutY="548.0" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #ffffff;" unFocusColor="#7c4dff" visibleRowCount="5" />
+      <Label layoutX="12.0" layoutY="552.0" prefHeight="17.0" prefWidth="93.0" text="Categoria:" textFill="WHITE" />
+      <ImageView fx:id="saveBtnImg" fitHeight="27.0" fitWidth="27.0" layoutX="560.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-save-50.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="mensajeLabel" layoutX="156.0" layoutY="580.0" prefHeight="17.0" prefWidth="374.0" text="Mensaje" textFill="WHITE" />
+   </children>
+</AnchorPane>
