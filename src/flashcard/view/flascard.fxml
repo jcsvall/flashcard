@@ -53,12 +53,12 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <JFXButton fx:id="practicarBtn" layoutX="888.0" layoutY="377.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #303f9f;" text="Practicar" textFill="WHITE">
+            <JFXButton fx:id="practicarBtn" layoutX="791.0" layoutY="377.0" prefHeight="30.0" prefWidth="225.0" style="-fx-background-color: #303f9f;" text="Practicar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="seleccionadosBtn" layoutX="888.0" layoutY="412.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #303f9f;" text="Seleccionados(0)" textFill="WHITE">
+            <JFXButton fx:id="seleccionadosBtn" layoutX="791.0" layoutY="412.0" prefHeight="30.0" prefWidth="225.0" style="-fx-background-color: #303f9f;" text="Seleccionados(0)" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -67,7 +67,7 @@
                <font>
                   <Font size="14.0" />
                </font></JFXButton>
-            <JFXButton fx:id="editarBtn" layoutX="888.0" layoutY="447.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: #303f9f;" text="Editar" textFill="WHITE">
+            <JFXButton fx:id="editarBtn" layoutX="791.0" layoutY="447.0" prefHeight="30.0" prefWidth="225.0" style="-fx-background-color: #303f9f;" text="Editar" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
