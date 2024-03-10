@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXColorPicker?>
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -16,7 +17,10 @@
       <Label fx:id="textoLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="471.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" text="testing" textFill="#fcf8f8" wrapText="true">
          <font>
             <Font name="System Bold" size="36.0" />
-         </font></Label>
+         </font>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding></Label>
       <JFXTextArea fx:id="desccriptionTextArea" focusColor="#7c4dff" layoutX="268.0" layoutY="476.0" prefHeight="98.0" prefWidth="282.0" promptText="Agrega el texto" style="-fx-background-color: #ffffff;" unFocusColor="#7c4dff">
          <font>
             <Font size="18.0" />
